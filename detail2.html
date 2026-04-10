@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thần Bí Phục Tô - 𝔰𝔥𝔬𝔯𝔢♡𝔨𝔢𝔢𝔭𝔢𝔯</title>
+<link rel="stylesheet" href="style_dark.css">
+<link rel="stylesheet" href="support.css">
+</head>
+<body>
+<audio id="bgSound" src="duong gian.mp3"></audio>
+
+<div id="intro-video">
+  <video id="bgVideo" autoplay muted playsinline>
+    <source src="duongian.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<script>
+  const audio = document.getElementById("bgSound");
+  const video = document.getElementById("bgVideo");
+  const intro = document.getElementById("intro-video");
+
+  video.addEventListener("play", () => {
+    audio.play().catch(() => {
+      console.log("Autoplay audio bị chặn");
+    });
+  });
+
+  intro.addEventListener("click", () => {
+    audio.pause();
+    audio.muted = true;
+
+    video.pause();
+    video.muted = true;
+
+    intro.style.display = "none";
+  });
+
+  video.addEventListener("ended", () => {
+    audio.pause();
+    audio.currentTime = 0;
+
+    intro.style.opacity = "0";
+
+    setTimeout(() => {
+      intro.style.display = "none";
+    }, 800);
+  });
+  
+  video.addEventListener("ended", () => {
+    intro.style.opacity = "0";
+
+    setTimeout(() => {
+      intro.style.display = "none";
+    }, 500);
+  });
+
+</script>
+  <header>
+    <div class="logo">𝔰𝔥𝔬𝔯𝔢♡𝔨𝔢𝔢𝔭𝔢𝔯</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search novels...">
+      <button>Search</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="c.html">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <aside class="left-sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Fantasy</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Sci-Fi</a></li>
+        <li><a href="#">Adventure</a></li>
+        <li><a href="#">Mystery</a></li>
+      </ul>
+      <div class="auth-panel">
+        <h3>Tài khoản</h3>
+        <button class="auth-btn signin-btn">Đăng nhập</button>
+        <button class="auth-btn register-btn">Đăng ký</button>
+      </div>
+    </aside>
+    <div class="content">
+<a href="c.html" class="back-link">&larr; Back to Home</a>
+      
+      <div class="novel-hero">
+        <img src="1.jpg" alt="Thần Bí Phục Tô" class="hero-img">
+        <div class="novel-info">
+          <span class="tag">Web Novel</span>
+          <h1>Thần Bí Phục Tô</h1>
+          <p class="author">Thất Phân Vô Nại</p>
+          <div class="stars">★★★★★</div>
+          <p class="status">Completed</p>
+          <p class="description">Hành trình của một đầu bếp bình thường bước vào thế giới thần bí. Kết hợp ẩm thực, tu luyện và những bí mật cổ xưa qua từng món ăn thần kỳ. Câu chuyện độc đáo về phục tô thần bí, nơi mỗi món ăn là một bí cảnh tu luyện đầy màu sắc và hương vị đặc biệt.</p>
+        </div>
+      </div>
+      
+      <h2>Chapters (1200 chapters)</h2>
+      
+       <div id="chapter-list"></div>
+
+<script>
+  const chapterList = document.getElementById("chapter-list");
+
+  for (let i = 1; i <= 1200; i++) {
+    chapterList.innerHTML += `<a href="read 2.html?chap=${i}" class="chapter-item">Chương ${i}</a>`;
+  }
+</script>
+    </div>
+    <aside class="sidebar">
+      <h2>Trending</h2>
+      <div class="trend-item">
+        <img src="3.jpg" alt="">
+        <div>
+          <h4>Lord of the Mysteries</h4>
+          <p>358 reads - 1432 chapters</p>
+        </div>
+      </div>
+      <div class="trend-item">
+        <img src="1.jpg" alt="">
+        <div>
+          <h4>Thần Bí Phục Tô</h4>
+          <p>Completed</p>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <a href="https://www.messenger.com/e2ee/t/8092721154146692" target="_blank" rel="noopener noreferrer" class="messenger-icon" title="Chat với tôi trên Messenger">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.29 2 11.8c0 2.91 1.63 5.5 4.18 7.06v3.59l4.03-2.23c.89.24 1.84.37 2.79.37 5.52 0 10-4.29 10-9.8S17.52 2 12 2zm1.69 12.97l-2.31-2.49-4.05 2.49 4.38-5.53 2.33 2.48 4.07-2.48-4.42 5.53z"/>
+  </svg>
+</a>
+
+  <footer class="footer-table">
+  <div class="footer-content">
+    <div class="footer-item">Chính sách</div>
+    <div class="footer-item">Điều khoản dịch vụ</div>
+    <div class="footer-item">Trang Facebook</div>
+    <div class="footer-item">Thông báo</div>
+  </div>
+  <div class="footer-bottom">
+    <p>Thời gian làm việc từ 8h sáng - 23h đêm tất cả các ngày trong tuần</p>
+    <p>© Copyright DUCKCOOP.VNS. All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc truyện - 𝔰𝔥𝔬𝔯𝔢♡𝔨𝔢𝔢𝔭𝔢𝔯</title>
+  <link rel="stylesheet" href="style_dark.css">
+  <style>
+    .main { flex-direction: column; padding: 40px 60px; }
+    .content { flex: 1; max-width: 100%; }
+    .reading-container { background: linear-gradient(145deg, #1e1e1e, #1a1a1a); border-radius: 20px; padding: 40px; margin-top: 30px; box-shadow: 0 10px 40px rgba(26,26,26,0.2); }
+    .chapter-title { font-size: 32px; text-align: center; margin-bottom: 30px; color: #dc2626; border-bottom: 3px solid #b91c1c; padding-bottom: 15px; }
+    .reading-frame { font-size: 18px;white-space: pre-line; line-height: 1.8; color: #e5e5e5; max-height: 70vh; overflow-y: auto; background: rgba(0,0,0,0.3); padding: 30px; border-radius: 15px; border-left: 5px solid #dc2626; }
+    .chapter-nav { text-align: center; margin: 20px 0; }
+    .nav-btn { background: #dc2626; color: white; border: none; padding: 12px 24px; margin: 0 10px; border-radius: 8px; cursor: pointer; font-size: 16px; transition: background 0.3s; }
+    .nav-btn:hover:not(:disabled) { background: #b91c1c; }
+    .nav-btn:disabled { background: #666; cursor: not-allowed; opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">𝔰𝔥𝔬𝔯𝔢♡𝔨𝔢𝔢𝔭𝔢𝔯</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search novels...">
+      <button>Search</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="c.html">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="content">
+      <a href="detail2.html" class="back-link">&larr; Back to Thần Bí Phục Tô</a>
+      
+      <div id="chapter-info" class="reading-container">
+        <h1 id="chapter-title" class="chapter-title">Chương 1</h1>
+        <div id="chapter-content" class="reading-frame">
+          Nội dung chương sẽ hiển thị ở đây...
+        </div>
+        <div id="chapter-nav" class="chapter-nav"></div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://www.messenger.com/e2ee/t/8092721154146692" target="_blank" rel="noopener noreferrer" class="messenger-icon" title="Chat với tôi trên Messenger">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.29 2 11.8c0 2.91 1.63 5.5 4.18 7.06v3.59l4.03-2.23c.89.24 1.84.37 2.79.37 5.52 0 10-4.29 10-9.8S17.52 2 12 2zm1.69 12.97l-2.31-2.49-4.05 2.49 4.38-5.53 2.33 2.48 4.07-2.48-4.42 5.53z"/>
+    </svg>
+  </a>
+
+  <footer class="footer-table">
+    <div class="footer-content">
+      <div class="footer-item">Chính sách</div>
+      <div class="footer-item">Điều khoản dịch vụ</div>
+      <div class="footer-item">Trang Facebook</div>
+      <div class="footer-item">Thông báo</div>
+    </div>
+    <div class="footer-bottom">
+      <p>Thời gian làm việc từ 8h sáng - 23h đêm tất cả các ngày trong tuần</p>
+      <p>© Copyright DUCKCOOP.VNS. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const chapNum = urlParams.get('chap') || '1';
+    const titleEl = document.getElementById('chapter-title');
+    const contentEl = document.getElementById('chapter-content');
+    const chapters = {
+        '1': `Chương 1: "Lão phu bấm một quẻ, phán rằng bây giờ thí chủ đang nằm trên giường xem tiểu thuyết, lại còn nằm nghiêng và đang sạc điện thoại."
+
+Dương Gian đang học lớp 12, lúc này đang trùm chăn lướt điện thoại một cách chán chường. Hắn tiện tay mở đại một bài đăng, bên dưới có không ít người vào bình luận:
+
+"Vãi chưởng, admin đúng là thần thánh, đoán trúng phóc luôn."
+
+"Admin ơi, ngài có thể nói với bọn họ rằng bây giờ tôi đang ngồi xổm trong nhà xí được không? Không cần nói nhiều, tôi ngồi tới tê dại cả chân rồi đây này."
+
+"Đi xăm kín lưng luôn, quyết không làm công nhân nữa."
+
+"Đỉnh, quá đỉnh!"
+
+Dương Gian đóng mục này lại, mở tiếp một bài đăng khác đang có lượt truy cập rất cao, mở đầu là một dòng giới thiệu gây tò mò:
+
+"Tôi là bác sĩ tại một phòng khám Trung Y hạng ba trong tỉnh. Dạo gần đây trong viện xảy ra vài chuyện cực kỳ đáng sợ, đến nỗi bây giờ tôi chẳng dám đi làm, đang phải xin nghỉ phép ở nhà."
+
+"Thôi đừng chém gió, tôi không mua giày cũng không xem quảng cáo đâu."
+
+"Chắc chắn chủ thớt bị bệnh nhân chơi khăm rồi. Nếu không phải, tôi xin livestream ăn c*t tự sát."
+
+"Giải tán đi, toàn lừa đảo câu view cả thôi."
+
+Dương Gian cảm thấy bình luận có chút nhạt nhẽo nên nhấn thẳng vào nội dung bài viết.
+
+Lập tức các bình luận rác biến mất, chỉ còn lại bài đăng của người tự xưng là bác sĩ kia. ID của người này là Lôi Điện Pháp Vương.
+
+Nội dung bài viết như sau:
+
+"Chuyện là thế này, tuần trước tới phiên tôi trực đêm. Lúc ấy khoảng 12 giờ khuya, xe cấp cứu chuyển tới một ông lão. Nhân viên y tế đi theo nói cụ này ngã từ tầng năm xuống. Đêm đó đồng nghiệp của tôi có việc bận, người phụ trách trực chẩn đoán chỉ có một mình tôi.
+
+Lúc kiểm tra, tôi dám chắc trăm phần trăm ông cụ kia không còn dấu hiệu sự sống, đã chết từ lâu rồi. Hơn nữa, dựa vào nhiệt độ cơ thể, chắc chắn ông cụ không thể nào mới ngã lầu tử vong trong tối nay được. Những ai có chút kiến thức y khoa đều biết, người chết trong vòng mười tiếng đầu, ở điều kiện nhiệt độ thường, cứ mỗi tiếng thân nhiệt sẽ giảm 1 độ. Phải qua 24 tiếng sau nhiệt độ cơ thể mới cân bằng với môi trường.
+
+Nhưng lúc tôi khám, thân nhiệt của ông cụ thấp hơn nhiệt độ phòng ít nhất 10 độ, mà nhiệt độ đêm đó là 22 độ C. Tôi đoán ông cụ này đã chết hơn một ngày rồi."
+
+Ngay lập tức phía dưới có bình luận:
+
+"Chủ thớt, cái cụm từ 'có chút kiến thức' nghe đáng sợ vãi."
+
+"Mau nhìn xem giày của bệnh nhân còn hay rơi mất rồi? Nếu chưa rơi thì vẫn còn cơ hội cứu sống đấy."
+
+"Nghĩ kỹ thấy rợn người quá. Chủ thớt kể tiếp đi, tôi trùm chăn kín mít rồi."
+
+Dương Gian tiếp tục lướt xuống dưới.
+
+Lôi Điện Pháp Vương tiếp tục cập nhật:
+
+"Dựa vào kinh nghiệm cày hơn 300 tập Conan hồi cấp hai, tôi lập tức đoán ông lão này không phải chết do tai nạn ngã lầu, mà có lẽ là bị mưu sát. Thi thể này chắc chắn từng bị đông lạnh. Lúc ấy tôi đã quyết định báo cảnh sát và thuật lại sự việc. Nhưng cái tôi muốn nói hôm nay không phải chuyện đó, mà là những gì xảy ra sau đó."
+
+Bài đăng bị ngắt quãng, phải hai tiếng sau mới thấy cập nhật tiếp.
+
+"Xin lỗi anh em, vừa rồi có người tới gõ cửa hỏi tình hình liên quan đến vụ đó. Nhưng không phải cảnh sát, cũng chẳng giống nhà báo, họ có giấy tờ của cơ quan nhà nước, xưng là Cảnh sát hình sự quốc tế. Thôi bỏ đi, mặc kệ họ."
+
+"Hình như là sáng ngày thứ hai thì phải. Lúc đó tôi chưa đến ca trực, nhưng nghe đồng nghiệp kể lại, thi thể ông cụ trong nhà xác đã biến mất. Cảnh sát đang dốc sức điều tra, nghi ngờ hung thủ đánh cắp thi thể. Vụ việc ầm ĩ lắm, bệnh viện phải trích xuất toàn bộ camera giám sát, nhưng cuối cùng vẫn không tìm ra thi thể, cũng chẳng thấy hung thủ đâu."
+
+"Tối hôm ấy lại đến ca trực của tôi..."
+
+"Chuyện ban ngày khiến tôi hơi bất an. Có bệnh nhân trong viện kháo nhau rằng anh ta nhìn thấy thi thể ông cụ kia, nhưng không phải bị ai cõng đi, mà là... tự mình bước đi. Bệnh nhân đó còn khẳng định chắc nịch hướng ông lão đi, kiểm tra lại thì đúng là con đường dẫn từ nhà xác ra ngoài.
+
+Nghe xong tôi cũng hơi rén, nhưng may sao tôi vốn theo chủ nghĩa vô thần, không tin chuyện ma quỷ nên cũng chỉ nghe cho vui. Sau đó nghe y tá trưởng bảo bác sĩ Phương khoa thần kinh chuẩn bị tăng liều thuốc cho bệnh nhân kia, tôi mới thấy nhẹ nhõm hơn."
+
+"Quả nhiên, không nên tin lời người điên..."
+
+"Nhưng trọng điểm là chuyện xảy ra lúc tôi trực đêm hôm đó. Khoảng 2 giờ sáng, đang ngồi rảnh rỗi trong phòng khám cày game 'Lam Nguyệt', các bạn không tưởng tượng được đâu, game này cuốn lắm, là anh em thì vào chém gió..."
+
+"Con mẹ nó, chủ thớt là thiên tài marketing à?"
+
+"Giữa người với người sao không có chút chân thành nào vậy? Chủ thớt 'quay xe' gắt quá làm ta không kịp đội mũ bảo hiểm."
+
+"Đỉnh, quá đỉnh! Tôi đoán trúng phần đầu nhưng không đoán được cái kết. Mà cái bạn đòi livestream ăn c*t bên trên đâu rồi?"
+
+Một loạt bình luận khiến bài viết nổi lên top đầu diễn đàn.
+
+Dương Gian nằm trong chăn cười méo xẹo. Thời nay người ta chạy quảng cáo bất chấp liêm sỉ đến mức này sao?
+
+Thế nhưng khi kéo xuống thêm một chút, hắn nhận ra có gì đó không đúng.
+
+Lôi Điện Pháp Vương đăng tiếp:
+
+"Sorry, sorry, nói thật là tôi không quảng cáo đâu. Đêm hôm ấy thực sự đã xảy ra một chuyện quỷ dị không thể tưởng tượng nổi. Lúc 2 giờ sáng, đang chơi game, đột nhiên tôi cảm thấy lạnh toát cả người, cái lạnh y hệt như đang đứng trong nhà xác vậy, khiến tôi nổi hết da gà. Các bạn đoán xem sau đó thế nào?"
+
+"Ông lão mất tích trong nhà xác hôm trước, chẳng biết bằng cách nào lại xuất hiện ngay bên ngoài phòng khám. Ông ấy chưa chết! Ông ấy chậm rãi bước ra khỏi bệnh viện. Trời ơi, sao có thể như thế được? Tôi tận mắt chứng kiến ông ấy chết rồi cơ mà, chết hơn một ngày rồi, sao có thể sống lại? Phim kinh dị à? Xác chết vùng dậy? Hay kỳ tích y học?
+
+Trong nháy mắt tôi đã nghĩ rất nhiều, có lẽ do thường xuyên tiếp xúc với xác chết nên tôi cũng bớt sợ hơn người thường. Phản ứng đầu tiên lúc đó là rút điện thoại ra chụp lại gửi cho bạn bè. Bên dưới có ảnh, nói có sách mách có chứng, tuyệt đối không phải PR."
+
+Dương Gian lướt xuống, một bức ảnh lập tức đập vào mắt.
+
+Bức ảnh không hề mờ ảo mà cực kỳ rõ nét. Trong hình là cảnh bên ngoài ô cửa kính phòng khám, một cụ già đang đi qua đường.
+
+Ông cụ mặc chiếc áo trường sam màu đen kiểu cũ, người gầy nhom, da dẻ đen đúa lốm đốm những vết thâm tím. Từ góc chụp này có thể thấy được một bên mắt của ông lão. Đó là một con mắt... màu tro tàn, trống rỗng, không chút sinh khí, mang theo sự tĩnh mịch đáng sợ.
+
+Bức ảnh không máu me nhưng cảm giác mà ông lão tỏa ra lại khiến người xem dựng tóc gáy.
+
+Nhớ lại lời khẳng định chắc nịch của vị bác sĩ rằng đây là một thi thể lạnh băng, Dương Gian càng cảm thấy ớn lạnh.
+
+Càng nhìn kỹ bức ảnh, càng thấy rợn người.
+
+Giống như đang nhìn một người chết, hay đúng hơn... đang nhìn một con ma.
+
+"Dọa chết bảo bảo rồi! Bức ảnh này tà môn quá, càng nhìn càng sợ. Chủ thớt lấy đâu ra thế?"
+
+"Sao trên tay ông lão nhiều vết lốm đốm thế kia? Nhìn ghê quá!"
+
+"Đó là thi ban, những vết xuất hiện trên thi thể người sau khi chết. Điều này chứng tỏ ông lão kia là một cái xác không hồn."
+
+"Hừ, yêu ma quỷ quái mau biến đi! Ta là Lâm Chính Anh đây."
+
+Một người comment kèm hình vẽ đạo sĩ trừ tà.
+
+"Xì, anh mà là Lâm Chính Anh thì tôi là Quan Thế Âm Bồ Tát."
+
+Mặc kệ cư dân mạng tranh cãi, vị Lôi Điện Pháp Vương kia lại tiếp tục cập nhật:
+
+"Bức ảnh là thật 100%, tự tay tôi chụp. Sau đó ông lão cứ thế đi ra khỏi bệnh viện, đi đâu tôi không rõ. Nhưng nếu ai sống cùng thành phố với tôi, hãy cẩn thận. Mặc dù tôi không tin ma quỷ, nhưng có những thứ không thể không tin."
+
+"Đợi đã, hình như có người đang gõ cửa. Chắc cảnh sát tới lấy lời khai bổ sung. Tôi ra mở cửa rồi quay lại ngay, các bạn đợi nghe nốt đoạn sau nhé."
+
+Thế nhưng chưa đầy một phút sau, vị bác sĩ kia liên tục gửi tin nhắn mới:
+
+"Chết rồi! Chết tôi rồi! Là ông lão ở bệnh viện! Ông ta đang gõ cửa nhà tôi! Tôi nhìn rất rõ qua lỗ mắt mèo! Giờ tôi phải làm sao đây? Hình như tôi dính vào thứ không nên dính rồi!"
+
+"Chủ thớt diễn sâu quá nha, chắc đang cười thầm chứ gì?"
+
+"Định mệnh, thật á? Không thể trùng hợp thế được."
+
+"Báo cảnh sát đi! Mau lên! Bắt được ma sống rồi!"
+
+"Chủ thớt đừng đóng kịch nữa, chắc chắn là fake. Nếu không tôi lại xin ăn c*t lần hai."
+
+"Lại là ông bạn ăn c*t, nợ lần trước còn chưa trả đâu đấy."
+
+Bên dưới, Lôi Điện Pháp Vương vẫn tiếp tục spam trong hoảng loạn:
+
+"Tôi báo cảnh sát rồi, giờ phải làm sao?"
+
+"Nó vẫn đang gõ cửa, nhìn có vẻ không muốn đi. Thôi chết rồi, bóng đèn phòng khách tự nhiên tắt ngúm. Tôi sợ quá không dám ra ngoài đó nữa."
+
+"Tôi khóa chặt cửa phòng ngủ rồi, bật hết đèn lên rồi nhưng ông lão vẫn đang gõ cửa."
+
+Đến đây, các tin nhắn xuất hiện dồn dập, cách nhau chưa đến 3 giây, đầy lỗi chính tả. Có thể thấy người đăng bài đang sợ hãi đến cực độ.
+
+Dương Gian cảm thấy lạnh toát sống lưng. Dù biết có thể là chuyện bịa, nhưng tưởng tượng cảnh ông lão trong ảnh đang đứng gõ cửa nhà mình cũng đủ khiến da đầu tê dại.
+
+Một xác chết sống dậy, tìm đến tận cửa... ai gặp cảnh này mà chẳng phát điên?
+
+Bài đăng vẫn chưa kết thúc:
+
+"Không được rồi... Chết chắc rồi... Trong phòng khách có tiếng bước chân! Trời ơi, nhà chỉ có mình tôi! Ông lão vào được rồi! Chắc chắn ông ta đang ở phòng khách! Tại sao chứ? Tôi đâu có nghe tiếng mở cửa, làm sao ông ta vào được?"
+
+"Hình như tiếng bước chân dừng lại ngay cửa phòng tôi rồi."
+
+"Nó lại gõ cửa... Tôi cảm thấy không ổn. Tôi sẽ ghi âm lại làm bằng chứng, kèm số điện thoại. Nếu không gọi được cho tôi nghĩa là tôi gặp chuyện rồi. Ai đó làm ơn báo cảnh sát giúp tôi..."
+
+"Cốc... cốc, cốc... cốc, cốc..."
+
+Phía dưới là một file ghi âm. Mở ra, chỉ nghe thấy tiếng gõ cửa nặng nề.
+
+Từng tiếng, từng tiếng một. Âm thanh khô khốc như gõ vào tâm can người nghe, gây ra cảm giác ngột ngạt khó thở.
+
+Bài đăng dừng lại ở đó một lúc lâu.
+
+Dương Gian kéo xuống dưới cùng, chỉ thấy một dòng cập nhật cuối cùng:
+
+"Ông lão... vào rồi."
+
+…
+
+8 giờ tối, tại trường học, giờ tự học buổi tối.
+
+Vì đêm qua lướt diễn đàn xem chuyện ma quá khuya, cả ngày hôm nay Dương Gian cứ ngáp ngắn ngáp dài, tinh thần ủ rũ. Hễ vào giờ học là buồn ngủ díu mắt, nhưng trong đầu cứ hiện lên bức ảnh ông cụ kia. Trong cơn mơ màng, hắn cảm giác đôi mắt trống rỗng, tĩnh mịch ấy đang từ một góc tối nào đó nhìn mình chằm chằm.
+
+Dương Gian giật mình tỉnh lại, cố xốc lại tinh thần.
+
+"Không ngủ được, tấm ảnh kia đúng là tà môn."
+
+"Ha ha, Dương Gian, tối qua làm chuyện xấu chứ gì?"
+
+Một cái đầu thò sang từ bên cạnh, là một nam sinh dáng người cao gầy.
+
+Dương Gian buồn bực đáp:
+
+"Liệt Dương? Làm chuyện xấu cái khỉ gì."
+
+Trương Vĩ, biệt danh Liệt Dương. Nguồn gốc cái tên này là một câu chuyện buồn: Hồi nhập học, tên hắn xếp sau Dương Gian, giáo viên đọc nhầm thành Dương Vĩ (Liệt dương), thế là cái tên này đeo bám hắn suốt ba năm.
+
+Trương Vĩ vỗ vai bạn hiền, thì thầm:
+
+"Ha ha, đừng chối nữa. Tôi thấy ông cả ngày ngáp lên ngáp xuống, chắc chắn đêm qua làm chuyện gì mờ ám. Gần đây kiếm được 'tài liệu' gì ngon à? Share cho anh em đi, có phúc cùng hưởng chứ."
+
+Dương Gian gạt đi:
+
+"Sướng cái đầu ông ấy. Tối qua tôi đọc truyện ma trên diễn đàn nên ngủ muộn."
+
+"Truyện ma? Nhắc mới nhớ, Dương Gian này, ông có biết hồi trước, tại một khu chung cư trong thành phố mình xảy ra chuyện kỳ bí không?"
+
+Một bạn nữ tên Miêu Tiểu Thiện ngồi gần đó tò mò ghé vào:
+
+"Chuyện kỳ bí gì thế?"
+
+Dương Gian ngạc nhiên: "Sao tôi không nghe nói gì nhỉ?"
+
+Trương Vĩ hạ giọng ra vẻ bí hiểm:
+
+"Cái này tôi cũng mới biết. Nghe đồn chỉ trong một đêm, khu chung cư đó có hai mươi mấy người treo cổ tự sát tập thể. Thi thể treo lủng lẳng trên cửa chống trộm, y như phơi thịt khô, kinh dị vô cùng. Tôi còn lưu một tấm ảnh chụp hiện trường đây, không biết thật hay giả."
+
+Nói xong, Trương Vĩ móc điện thoại, mở album ảnh, tìm đến một tấm hình.
+
+Bức ảnh được chụp vào chạng vạng tối, ánh sáng nhập nhoạng nên khá mờ. Tuy nhiên vẫn có thể lờ mờ nhận ra những dáng người treo trên song sắt cửa chống trộm ngoài ban công. Lố nhố, chi chít thành một hàng dài.
+
+Nhìn kỹ, có thể thấy những khuôn mặt dữ tợn, kinh hoàng của từng thi thể. Đặc biệt là những đôi mắt trợn trừng như sắp lồi ra, không biết trước khi chết họ đã trải qua nỗi kinh hoàng khủng khiếp nào.
+
+Mấy chục thi thể nhìn từ xa chẳng khác nào những tảng thịt khô đang phơi. Điều kỳ quái nhất là đầu của các thi thể nằm bên trong song sắt, nhưng thân người lại thõng ra bên ngoài. Khe hở của cửa chống trộm hẹp như vậy, người trưởng thành không thể nào chui lọt.
+
+Đầu họ ngửa hẳn ra sau, tạo thành một tư thế bị bẻ gãy cổ quái dị.
+
+Càng nhìn kỹ, cảm giác bất an càng dâng trào. Bức ảnh này mang lại hiệu ứng y hệt tấm ảnh ông già mặc trường sam trong máy Dương Gian. Nó khơi dậy nỗi sợ hãi nguyên thủy nhất của con người.`,
+      '2': `Chương 2: Một nam sinh bên cạnh hỏi
+
+"Vãi thật, Liệt Dương, ông lấy cái ảnh này ở đâu ra thế? Sao tôi tìm trên mạng không thấy?"
+
+Trương Vĩ dương dương tự đắc:
+
+"Là thằng bạn tôi đi ngang qua chụp được đấy. Giờ chỗ đó bị phong tỏa rồi, cấm chụp hình. Nếu cậu gọi tôi một tiếng 'Bố', tôi gửi cho. À mà cấm gọi tôi là Liệt Dương nữa nhé, dạo này tôi mới đổi tên tiếng Anh rồi."
+
+"Tên gì?"
+
+"Ward Jill. Nghe Tây không?"
+
+"Thế thì tôi cũng có tên tiếng Anh là Ward Sabi (Quốc Sả Bi). Nhớ kỹ nhé, sau này ra đường cứ gọi to tên tiếng Anh của tôi lên."
+
+Dương Gian lắc đầu ngán ngẩm:
+
+"Cùng nhau học chín năm trời, sao các cậu lại 'ưu tú' đến mức này nhỉ?"
+
+Trương Vĩ cười hề hề:
+
+"Dương Gian, bọn này toàn phải đi học thêm, chỉ có cậu là học không vô thôi."
+
+Miêu Tiểu Thiện xen vào, giọng lo lắng:
+
+"Nói đến chuyện kỳ bí, dạo này trên mạng nhiều người bàn tán lắm, nói như thật ấy. Tôi cũng bị dọa không dám xem. Mấy cậu bảo những thứ này rốt cuộc là thật hay giả? Không phải có nơi thực sự có ma chứ?"
+
+Dương Gian trầm ngâm đáp:
+
+"Đa số chuyện trên mạng đều là fake, trừ khi tận mắt chứng kiến, nếu không tôi chả tin trên đời có ma quỷ. Nhưng mà... có những thứ thà tin là có còn hơn không. Tốt nhất là tránh xa mấy chuyện này ra."
+
+"Cũng đúng." Miêu Tiểu Thiện gật đầu đồng tình.
+
+"Trật tự! Cả lớp im lặng!"
+
+Lúc này, cô giáo Vương bước nhanh vào lớp, lớn giọng:
+
+"Nhà trường vừa có thông báo đột xuất. Tiết tự học tối nay chuyển thành tiết tuyên truyền, chủ yếu là phổ biến kiến thức phòng vệ cho học sinh. Lát nữa trong giờ, tôi không muốn thấy bất kỳ ai gây mất trật tự. Sau đây, xin mời thầy Chu - Chu Chính sẽ giảng bài cho chúng ta. Cả lớp vỗ tay hoan nghênh!"
+
+"Hả?"
+
+Dương Gian vừa vỗ tay lấy lệ vừa thấy nghi hoặc. Muộn thế này rồi còn dạy kỹ năng phòng vệ?
+
+Thế nhưng khi nhìn thấy người tên Chu Chính bước vào, mí mắt hắn không khỏi giật giật.
+
+Người đàn ông này mặc một chiếc áo khoác gió màu xám, người bọc kín mít, đeo khẩu trang che kín mặt dù trời đang rất nóng. Trước ngực ông ta đeo một tấm thẻ chứng nhận gì đó không rõ.
+
+Điều khiến người ta chú ý nhất là ngoại hình của ông ta. Khuôn mặt gầy gò đến mức chỉ còn da bọc xương, hốc hác như một cái đầu lâu. Vì quá gầy nên đôi mắt ông ta lồi ra, to một cách bất thường, lòng trắng vằn vện tia máu như đã mất ngủ triền miên.
+
+Trái ngược với khuôn mặt hốc hác, cái bụng của ông ta lại phình to một cách kỳ dị.
+
+Giống như một cái bụng bia chứa đầy mỡ, nhưng người gầy gò như thế sao có thể có bụng bia?
+
+Bất thường. Một sự bất thường quái đản khiến người đối diện cảm thấy bất an.
+
+Giờ phút này, Chu Chính đứng trên bục giảng, toàn thân toát ra luồng khí âm u, tiều tụy, nồng nặc mùi tử khí. Ông ta đứng cứng đờ, đôi mắt vằn tia máu chuyển động chậm chạp như hai hòn bi ve đục ngầu, không chút thần thái.
+
+Ánh mắt ông ta quét qua đâu, học sinh ở đó đều cảm thấy lạnh gáy.
+
+Dương Gian nắm chặt tay theo bản năng, toàn thân căng cứng, không dám nhìn thẳng. Hắn thầm nghĩ:
+
+"Cảm giác này... còn mãnh liệt hơn cả lúc nhìn tấm ảnh kia."
+
+Chu Chính cất lời, giọng nói khô khốc, khàn đặc và the thé như tiếng thủy tinh cào xuống nền nhà:
+
+"Chào các em, tôi tên là Chu Chính, Cảnh sát hình sự quốc tế. Rất vui vì hôm nay còn có thể sống sót đứng đây giảng bài cho các em."
+
+Rất vui vì còn sống?
+
+Dương Gian rùng mình. Lời chào hỏi kiểu gì mà quái gở vậy?
+
+Chu Chính cầm phấn, quay lưng viết lên bảng đen một chữ rất to. Nét chữ nguệch ngoạc nhưng hằn sâu đầy lực đạo:
+
+QUỶ!
+
+"Truyền thuyết về ma quỷ đã tồn tại từ ngàn xưa, không chỉ ở nước ta mà còn trong lịch sử các quốc gia khác. Tôi không giỏi lịch sử, cũng không kể chuyện cổ đại, chỉ nói về các sự kiện lớn trong vài chục năm gần đây: Sự kiện bảo tàng Louvre ở Pháp, biệt thự ma ám ở Mỹ, bóng ma bãi đỗ xe ở Nhật Bản, lời nguyền Pharaoh... và sự kiện phong tỏa chung cư ở nước ta."
+
+Giọng Chu Chính vẫn đều đều, không chút cảm xúc nhưng lại chứa đựng sự đáng sợ khó tả:
+
+"Có người từng nói, điểm cuối của khoa học chính là thần học. Câu này không sai. Hiện giờ có những chuyện các em không thể không tin. Những năm gần đây, các sự kiện siêu nhiên tăng đột biến trên toàn cầu. Nó không còn là những trường hợp lẻ tẻ, mà đang dần trở thành hiểm họa mang tính hủy diệt. Nếu không được khống chế, tương lai... có lẽ thế giới này sẽ không còn tương lai nữa."
+
+Cả lớp ngơ ngác nhìn nhau.
+
+Tiết học phòng vệ sao lại biến thành đại hội kể chuyện ma thế này? Lại còn chém gió đến mức tận thế?
+
+Không chỉ học sinh, ngay cả cô giáo Vương cũng sững sờ.
+
+"Chi tiết cụ thể tôi không tiện nói, các em cũng không cần hỏi. Điều tôi sắp nói sau đây, mong các em khắc cốt ghi tâm. Buổi thuyết trình hôm nay, có lẽ sẽ cứu mạng các em trong tương lai."
+
+Chu Chính quay lại bảng đen, viết xuống dòng chữ đầu tiên:
+
+1. Quỷ không thể bị giết chết.
+
+"Trong tương lai không xa, có lẽ các em sẽ gặp tình huống mà cả đời mình không muốn gặp nhất: Đối mặt với Quỷ. Mặc dù rất sốc nhưng hãy nhớ kỹ: Quỷ là bất tử. Vì vậy, dù sợ hãi đến đâu, tuyệt đối đừng bao giờ có ý định liều mạng với nó. Sinh mạng các em trước mặt nó chẳng khác gì sâu kiến. Nó giết các em còn dễ hơn búng tay. Chỉ cần một ánh nhìn, một cái chạm nhẹ, các em sẽ xong đời."
+
+Đôi mắt vằn tia máu của ông nhìn chằm chằm vào đám học sinh, nhấn mạnh từng chữ. Sau đó, ông viết tiếp câu thứ hai:
+
+2. Chỉ có Quỷ mới đối phó được Quỷ.
+
+"Nếu không thể giết chết Quỷ, thì mọi vũ khí của nhân loại từ súng đạn, bom mìn, thậm chí vũ khí hạt nhân đều vô dụng. Bùa chú trừ tà cũng chỉ là giấy lộn. Biện pháp duy nhất hiện nay là dùng chính sức mạnh của Quỷ để khắc chế Quỷ. Tôi biết các em đang nghi ngờ tôi bị điên, nhưng không sao. Quan trọng là hãy nhớ kỹ lời tôi, sau này các em sẽ cần đến. Đương nhiên, tôi hi vọng các em vĩnh viễn không phải dùng tới."
+
+Trương Vĩ thì thầm:
+
+"Dương Gian, ổng đang nói cái quái gì thế? Tao chả hiểu gì cả."
+
+Dương Gian đáp khẽ:
+
+"Tôi cũng không hiểu lắm, nhưng nghe mấy lời này tôi thấy bất an kinh khủng."
+
+"Chẳng lẽ Trái Đất biến dị? Giống như trong tiểu thuyết à?"
+
+"Chắc... không phải đâu..." Dương Gian ngập ngừng.
+
+Dù từng mơ mộng về siêu năng lực, nhưng nếu những thứ kinh dị này có thật, thì đó là ác mộng chứ không phải giấc mơ.
+
+Chu Chính tiếp tục:
+
+"Đã không thể giết Quỷ, người thường lại yếu đuối, vậy câu hỏi đặt ra là: Nếu bị Quỷ nhắm tới, làm thế nào để sống sót? Đây là trọng điểm, mong các em nhớ kỹ cả đời."
+
+Ông viết câu thứ ba lên bảng:
+
+3. Nhìn thấu quy luật của Quỷ.
+
+"Mọi sự vật đều vận hành theo quy luật, Quỷ cũng không ngoại lệ. Nghiên cứu cho thấy mỗi con Quỷ đều có phương thức giết người và hành động gần như cố định, giống như một chương trình máy tính đã được lập trình sẵn. Phải nhấn nút nguồn máy mới chạy, phải click chuột phần mềm mới mở. Vượt qua nỗi sợ hãi, quan sát và tìm ra quy luật của nó, tìm ra kẽ hở trong quy luật đó. Đây là cơ hội sống sót duy nhất của người bình thường."
+
+"Nhớ kỹ! Ngoài cách này ra, không còn con đường sống nào khác. Đừng trông chờ vào may mắn. Sự kinh khủng của thứ đó vượt xa trí tưởng tượng của các em."
+
+…
+
+Ba dòng chữ nguệch ngoạc nhưng đầy ám ảnh nằm trên bảng đen.
+
+Học sinh trong lớp bắt đầu xì xào, có người cười cợt, có người lắc đầu ngán ngẩm. Đa số đều cho rằng Chu Chính là một gã tâm thần.
+
+Chỉ có Dương Gian là nghiêm túc suy ngẫm. Câu chuyện trên diễn đàn, bức ảnh kinh dị, và giờ là bài giảng quái đản này... Phải chăng thế giới thực sự đang thay đổi?
+
+Chu Chính nhìn quanh lớp học:
+
+"Các em có câu hỏi gì không? Hoặc nếu quanh các em xảy ra chuyện kỳ quái, có thể hỏi tôi ngay bây giờ. Nếu không, buổi học kết thúc tại đây."
+
+Không ai giơ tay.
+
+Dương Gian thoáng nghĩ: "Hay là hỏi ổng về bức ảnh ông cụ kia nhỉ?"
+
+Hắn lấy điện thoại ra, mở lại bức ảnh ông già mặc trường sam.
+
+Nhưng ngay lúc hắn còn đang do dự, ánh đèn trong lớp học đột nhiên chớp tắt rồi mờ hẳn đi. Không gian trở nên u ám một cách quỷ dị.
+
+"Hửm?"
+
+Trên bục giảng, sắc mặt Chu Chính đanh lại, toàn thân căng cứng cảnh giác.
+
+Dương Gian cũng cảm nhận được sự bất thường. Hắn ngẩng đầu lên, vô tình nhìn xuyên qua cửa kính ra ngoài hành lang.
+
+Đồng tử hắn co rút dữ dội. Toàn thân tê liệt vì sợ hãi.
+
+Ngoài cửa sổ, một ông lão mặc áo trường sam đen, mặt đầy những đốm thi ban đang đứng đó. Đôi mắt xám trắng, đục ngầu, chết chóc đang nhìn trân trân vào trong lớp học. Một cái xác chết đứng thẳng.
+
+Bóng tối đen đặc như mực tàu bao phủ xung quanh ông ta, nuốt chửng mọi ánh sáng hành lang. Bóng tối ấy như dòng thủy ngân độc hại đang tràn vào lớp học.
+
+Bức tường nơi ông lão đứng bắt đầu mục rữa với tốc độ chóng mặt. Lớp sơn bong tróc, rêu mốc mọc lên tua tủa, tỏa ra mùi hôi thối nồng nặc của sự thối rữa.
+
+"Là ông cụ trong diễn đàn... Không thể nào! Sao ông ta lại ở đây?"
+
+Tay Dương Gian nắm chặt điện thoại đến trắng bệch. Trên màn hình vẫn là bức ảnh ông cụ đó, giống hệt kẻ đang đứng ngoài cửa sổ. Chỉ có điều, "thứ" ở ngoài kia còn đáng sợ hơn gấp vạn lần trong ảnh.
+
+Quá sợ hãi, Dương Gian bật dậy, làm đổ cả ghế ngồi.
+
+Cả lớp quay lại nhìn hắn.
+
+Cô giáo Vương quát:
+
+"Dương Gian! Em làm cái gì thế? Còn không mau ngồi xuống! Đừng làm loạn kỷ luật!"
+
+Dương Gian như không nghe thấy gì. Mắt hắn dán chặt vào ông lão áo đen ngoài cửa sổ.
+
+Ông ta nhúc nhích rồi...
+
+Cơ thể cứng đờ chuyển động một cách máy móc, tròng mắt trắng dã xoay chuyển, dõi theo từng chuyển động trong lớp.
+
+"Cộp... cộp... cộp..."
+
+Tiếng bước chân khô khốc vang lên ngoài hành lang, rõ mồn một, vọng vào tận tâm trí mỗi người.
+
+"Ông ta định đi sao?"
+
+Dương Gian toát mồ hôi lạnh, cầu mong ông ta đi khuất. Nếu câu chuyện trên diễn đàn là thật, thì một khi ông ta bước vào... kết cục sẽ là thảm sát.
+
+Nhưng sự thực tàn khốc hơn nhiều. Ông lão không bỏ đi. Ông ta bước vài bước rồi dừng lại... ngay trước cửa chính lớp học.
+
+Cô giáo Vương càng thêm tức giận:
+
+"Dương Gian! Tôi nói em không nghe hả? Lớp học an toàn mà em cũng dám náo loạn?"
+
+"Á á á!"
+
+Đột nhiên, một nữ sinh hét lên thất thanh, tay chỉ vào bàn học của mình, run rẩy không nói nên lời.
+
+Quyển sách trên bàn cô đang ố vàng nhanh chóng, mốc meo rồi mục nát... trong nháy mắt biến thành một đống mùn đen sì, hôi thối.
+
+Trương Vĩ bịt mũi kêu lên:
+
+"Thối quá! Tô Luy, sao trên bàn bà lại có đống phân thế này?"
+
+Một nam sinh khác mặt cắt không còn giọt máu, bật dậy lùi lại phía sau, lắp bắp:
+
+"Không thể nào... Sao có thể xuất hiện Quỷ vực ở trường học?"
+
+Cô giáo Vương điên tiết:
+
+"Phương Kính! Em nói cái gì cơ? Quỷ cái gì? Hôm nay cái lớp này bị làm sao thế hả?".`,
+      '3': `Chương 3: Trên bục giảng, Chu Chính khép hờ đôi mắt, toàn thân toát lên vẻ cảnh giác cao độ. Sự tiều tụy trước đó đã biến mất, thay vào đó, ông ta giống như một con mãnh thú vừa xổng chuồng, trở nên bạo lực và dữ tợn. Ông nhìn xoáy vào Phương Kính, hỏi:
+
+"Em biết Quỷ vực?"
+
+Phương Kính tỏ ra bình tĩnh đến lạ thường, cậu đáp:
+
+"Chu Chính, thầy rất rõ sự xuất hiện của Quỷ vực nghĩa là gì mà. Trong trường học, ít nhất đã xuất hiện một con quỷ mức độ siêu cấp nguy hiểm. Nếu hôm nay không xử lý tốt, đừng mong có ai sống sót rời khỏi đây, bao gồm cả ông."
+
+Chu Chính hỏi lại:
+
+"Xem ra những thứ cậu biết không ít, cậu cũng là người ngự quỷ hả?"
+
+"Chu Chính, đây là chuyện của tôi, thầy không cần quan tâm."
+
+Dứt lời, Phương Kính quay sang nhìn Dương Gian với vẻ mặt hung ác:
+
+"Vốn định mấy ngày nữa mới xử lý cậu, không ngờ tương lai lại thay đổi thế này. Dương Gian, hôm nay tôi nói luôn, tôi sẽ không để cậu phát triển tiếp. Tương lai, thằng nhóc như cậu sẽ trở nên cực kỳ đáng sợ, nhân vật mà quỷ thần nói giết là giết, khu vực cấm người sống nói san bằng là san bằng. Nhưng kiếp này, số phận định sẵn cậu phải chết trẻ rồi."
+
+"?"
+
+Dương Gian nghi hoặc nhìn Phương Kính, chẳng hiểu cậu ta đang lảm nhảm cái gì. Trong lòng hắn lúc này chỉ để ý đến ông già mặc áo dài đen đang đứng trân trân ngoài hành lang kia.
+
+Các học sinh khác nghe thấy cuộc đối thoại thì đều khiếp sợ, nhao nhao bàn tán:
+
+"Mẹ ơi, Phương Kính, lượng tin tức trong câu này của cậu khủng quá. Xảy ra chuyện gì với cậu vậy? Còn nói tương lai, còn kiếp trước, không lẽ mày xuyên không từ tương lai về hả?"
+
+"Chắc chắn rồi! Nhân vật chính thiên mệnh trong tiểu thuyết là vậy đó, tỉnh lại là về đến quá khứ. Phương Kính, cậu là nhân vật chính hả? Tương lai chắc là đã xảy ra biến cố lớn gì đó, nhớ bảo kê tôi nha."
+
+"Nếu Phương Kính là chân mệnh thiên tử thì Dương Gian là trùm phản diện rồi. Tương lai chắc Phương Kính bị Dương Gian hành chết nên giờ mới sống lại báo thù. Mọi người mau cô lập Dương Gian, sau này đừng chơi với nó nữa. Mong Phương ca quan tâm, tiểu đệ nguyện làm tay sai cho đại ca."
+
+"Toang rồi, toang thật rồi. Hôm nay sao thế nhỉ, ai nấy đầu óc đều không bình thường. Do mình không theo kịp thời đại hay thế giới này thay đổi quá nhanh? Sao sách vở của tôi cũng biến thành đống phân thế này? Tôi cảm thấy sắp xảy ra chuyện lớn rồi, hoảng quá đi mất."
+
+Những học sinh này khi đối diện với sự việc quái dị dường như vẫn chưa ý thức được tử thần đã kề dao tận cổ. Họ chỉ thấy hiếu kỳ, thậm chí có chút kích động vì hưng phấn.
+
+Đột nhiên…
+
+"Thùng, thùng, thùng."
+
+Tiếng gõ cửa trầm đục vang lên, rõ ràng như gõ thẳng vào tim mỗi người, mang theo một tiết tấu quỷ dị truyền vào lớp học.
+
+Thời khắc này, tất cả mọi người đều cảm thấy linh hồn mình như bị thứ gì đó đen tối bao trùm, ngột ngạt và khó chịu hệt như đang chìm dưới đáy nước sâu.
+
+Dương Gian run lên trong lòng:
+
+"Là tiếng gõ cửa đó... giống hệt trong file âm thanh kia."
+
+Âm thanh này y hệt thứ hắn đã nghe trên diễn đàn, chỉ là khi nghe trực tiếp tại hiện trường, nó càng trở nên rõ ràng và rợn người hơn gấp bội.
+
+Sắc mặt Chu Chính cực kỳ nghiêm trọng. Ông ta lấy ra một chiếc điện thoại vệ tinh chuyên dụng, ấn nút khẩn cấp. Đầu dây bên kia lập tức bắt máy.
+
+Một giọng nữ vang lên:
+
+"Chu Chính à? Báo cáo tình hình đi."
+
+Chu Chính nói nhanh:
+
+"Tôi đang ở trường THPT số 7 thành phố Đại Xương. Sự kiện khẩn cấp, trong trường xuất hiện ít nhất một con quỷ mức độ siêu cấp nguy hiểm."
+
+Tốc độ nói ở đầu dây kia rất nhanh:
+
+"Đã ghi nhận. Có thể đối phó không?"
+
+Chu Chính đáp:
+
+"Con quỷ đó đã hình thành Quỷ vực, bắt đầu gây ảnh hưởng tới vị trí chỗ tôi. Không nhìn thấy ánh đèn bên ngoài, có lẽ phạm vi của Quỷ vực lớn hơn tôi nghĩ."
+
+"Quỷ vực à... tình hình nghiêm trọng hơn rồi. Anh không đối phó được đâu, mau rút đi thì hơn."
+
+Chu Chính kiên quyết:
+
+"Bây giờ đi thì muộn rồi. Học sinh ở đây rất nhiều, tôi phải dùng hết khả năng để đảm bảo các em có thể sống sót rời khỏi."
+
+Giọng nói trong điện thoại cảnh báo:
+
+"Với trạng thái hiện giờ của anh, nếu tiếp tục dùng sức mạnh của quỷ sẽ rất nguy hiểm. Đến lúc đó, chỗ anh không chỉ có một con quỷ, mà là hai con. Tôi kiến nghị anh rút lui. Tuy cực hạn của anh sắp đến, dù anh liều mạng cũng chẳng chắc chắn cứu được ai cả. Quỷ có thể sản sinh ra Quỷ vực thậm chí được xếp vào cấp độ Thảm Họa."
+
+Chu Chính gạt đi:
+
+"Không còn thời gian nữa, tôi cách thứ đó chưa tới 5 mét, nó đang đứng ngay trước cửa lớp, thậm chí có khả năng đã ghim tôi rồi. Tiếp theo tôi sẽ duy trì liên lạc, nếu bị ngắt nghĩa là tôi đã chết. Mong cô chuyển di thư cho cha mẹ tôi. Thôi nhé, tôi bắt đầu hành động đây."
+
+"Thùng, thùng, thùng."
+
+Tiếng gõ cửa trầm đục, rõ ràng vang lên từ bên ngoài. Một dài hai ngắn, tần suất cố định, không ngừng gõ lên cánh cửa lớp học mỏng manh.
+
+Một học sinh không biết sống chết la lên:
+
+"Cô Vương… có người gõ cửa kìa."
+
+Cô giáo Vương có chút tần ngần, dù cảm thấy có dấu hiệu rất nghiêm trọng nhưng không kìm được sự hiếu kỳ. Cô định mở cửa sau của lớp học đi ra xem thử rốt cuộc là ai đang gõ.
+
+Chu Chính vội hét lên:
+
+"Đừng ra!"
+
+Nhưng tiếng hét của ông đã quá muộn. Cô Vương vừa mới mở cửa bước ra, kỳ quái thay, trong nháy mắt đã không thấy tăm hơi đâu nữa.
+
+Đúng vậy, không có tiếng động nào cả.
+
+Ngoài cửa lớp tối đen một mảnh, bóng tối u ám nồng đậm như nuốt chửng mọi tia sáng. Sau khi cô Vương bước ra, không còn chút động tĩnh nào, đến một chút âm thanh cũng không truyền lại, giống như cả người đã bốc hơi vào hư không.
+
+Ngay khi cửa lớp mở ra, bóng tối bên ngoài như một đám mây đen đặc quánh nhanh chóng tràn vào, không ngừng xâm nhập không gian lớp học.
+
+Giờ khắc này, dù là kẻ có dây thần kinh thô nhất cũng cảm nhận được sự bất thường.
+
+Tất cả mọi người trừng lớn mắt sợ hãi, nhiều nữ sinh bị dọa hét toáng lên, rời khỏi chỗ ngồi, không ngừng lùi về phía sau.
+
+Thật sự có quỷ rồi?
+
+…
+
+"Cốc, cốc, cốc."
+
+Âm thanh gõ cửa nặng nề, quái dị vẫn cứ vang lên đều đặn, như tiếng chuông đồng hồ báo tử đã được hẹn trước.
+
+Cửa chính của phòng học không khóa, thậm chí chẳng cài then, chỉ khép hờ. Chỉ cần đẩy nhẹ là mở.
+
+Nhưng điều khiến người ta rợn tóc gáy là ông lão mặc áo dài đen, toàn thân chi chít những đốm tử thi kia không hề đẩy cửa. Lão vẫn đứng trân trân ở ngoài gõ, không hề có ý định bước vào.
+
+Có lẽ lão muốn vào, nhưng bóng tối đen như hũ nút ngoài hành lang đã nhanh chóng lan tới trước.
+
+Cả phòng học bắt đầu xuất hiện những biến đổi khó mà tưởng tượng nổi.
+
+Trên bức tường mới tinh bỗng trở nên mốc meo loang lổ. Lớp xi măng tróc ra rơi lả tả, tạo thành bề mặt lồi lõm lỗ chỗ. Bức tường gồ ghề mọc ra những mảng rêu mốc xanh đen, tỏa ra mùi lạnh lẽo, tanh tưởi. Sách vở trên bàn bỗng chốc ngả vàng, mục nát. Thậm chí lớp nền xi măng dưới chân cũng bị bào mòn nhanh chóng, lộ ra những thanh cốt thép rỉ sét, vài chỗ bắt đầu sụp xuống.`,
+      '4': `Trong nháy mắt, nơi này như thể đã trải qua hàng chục năm bị thời gian tàn phá, hoang phế và tiêu điều.
+
+Tuy nhiên, ánh đèn trong phòng học vẫn cố chấp chống chọi lại bóng tối. Những tia sáng trắng yếu ớt lập lòe như ngọn nến trước gió, tựa hồ có thể vụt tắt bất cứ lúc nào.
+
+Nỗi kinh hoàng hiện rõ trên gương mặt mỗi học sinh. Có người thét lên chói tai, có người gào khóc kêu cứu, có người run rẩy không nói nên lời...
+
+Người duy nhất còn giữ được sự điềm tĩnh là Chu Chính trên bục giảng.
+
+Ông đứng yên không nhúc nhích, ánh mắt đảo quanh đánh giá tình hình, không bỏ sót bất kỳ động tĩnh nào. Con quỷ này quá nguy hiểm, lại sở hữu Quỷ vực, đây không phải thứ ông có thể dễ dàng đối phó.
+
+Điều ông muốn làm bây giờ là tìm mọi cách để mở ra một con đường sống, giúp đám học sinh này thoát khỏi đây, dù chỉ là một phần nhỏ trong số chúng.
+
+Đột nhiên, Phương Kính la lên, sắc mặt cực kỳ khó coi, tay chỉ vào mấy bạn học đang gục trên bàn:
+
+"Chu Chính, nhìn kìa!"
+
+Lúc này mọi người mới nhìn theo hướng chỉ tay của Phương Kính và bàng hoàng nhận ra. Có mấy bạn học bất động trên bàn, mắt trợn trừng, miệng há hốc, sắc mặt xám ngoét. Toàn thân họ tỏa ra mùi hôi thối của tử thi, giống như đã chết từ nhiều ngày trước.
+
+"Cốc, cốc, cốc."
+
+Tiếng gõ cửa lại vang lên lần nữa.
+
+Ngay lập tức, mấy cậu học sinh vừa nãy vẫn còn đứng lẫn trong đám đông bỗng nhiên run rẩy dữ dội, sau đó đờ người, ngã vật xuống đất.
+
+Một người định đỡ bạn mình dậy:
+
+"Lý Minh, cậu sao vậy?"
+
+Nhưng vừa chạm vào cơ thể đối phương, cậu ta liền hét lên một tiếng, hoảng sợ lùi lại phía sau.
+
+Lạnh như băng, cứng ngắc. Chẳng khác nào xác chết.
+
+Lý Minh giống hệt những học sinh trước đó: mắt trợn trừng, miệng há hốc, mặt xám xịt không còn chút sinh khí, cơ thể bắt đầu bốc mùi tử khí nồng nặc.
+
+Chết... chết cả rồi.
+
+Không chỉ một người, ít nhất khoảng sáu, bảy học sinh đều đã nằm bất động, biến thành cái xác không hồn.
+
+Một bạn nữ sợ hãi ngồi sụp xuống, vừa khóc vừa nói:
+
+"Sao lại như vậy? Sao có thể như vậy được? Ai đó cứu họ đi mà..."
+
+Một người khác lắp bắp, giọng run rẩy:
+
+"Mới nãy còn rất bình thường cơ mà, sao bỗng nhiên lại chết rồi?"
+
+Phương Kính đứng bên cạnh, mặt tái mét quát:
+
+"Nói lảm nhảm gì vậy! Ngoài cửa có một con quỷ, chúng ta đều có thể sẽ chết. Quỷ có thể tạo ra Quỷ vực rất đáng sợ, các cậu sẽ biết ngay thôi."
+
+Những người khác nhìn Phương Kính, ánh mắt tràn đầy sợ hãi như con mồi đã sa bẫy, run lẩy bẩy không ngừng.
+
+Phương Kính bực tức quay sang Chu Chính:
+
+"Chu Chính, thầy vẫn chưa nghĩ ra cách sao? Còn không nghĩ ra thì tất cả chúng ta sẽ chết rục ở đây đấy."
+
+Trong lòng hắn cũng đang run sợ tột độ, bởi trong Quỷ vực, tử thần không chừa một ai, kể cả hắn.
+
+Chu Chính cũng nóng nảy đáp:
+
+"Im miệng! Em không đợi được thì tự trốn đi, đừng có trông chờ vào thầy. Thầy không dám hành động thiếu suy nghĩ."
+
+Phương Kính gắt:
+
+"Chạy lung tung trong Quỷ vực còn chết nhanh hơn, thầy tưởng em không biết chắc?"
+
+"Nếu đã biết thì đứng yên chờ đợi tại đây cho thầy. Em sợ chết, mọi người đều sợ chết. Đừng tưởng biết chút ít thì cho mình là đặc biệt, trước mặt quỷ, sinh mạng ai cũng bình đẳng như nhau."
+
+"Con mẹ nó!"
+
+Phương Kính không nhịn được chửi thề một câu.
+
+Lúc này, chân tay Dương Gian lạnh toát. Hắn ép buộc bản thân phải bình tĩnh lại. Đây không phải lúc đùa giỡn, thực sự đã có người chết rồi, và con số vong mạng sẽ không dừng lại nếu cứ tiếp tục thế này.
+
+Vô tình nhìn thấy chiếc bảng đen rơi từ trên tường xuống, Dương Gian chợt ngẩn người.
+
+Ánh mắt hắn dừng lại trên ba dòng chữ mà Chu Chính đã viết trước đó, đặc biệt là câu cuối cùng: Nhìn thấy quy luật của quỷ.
+
+Chu Chính không dám hành động bừa bãi là vì ông ấy đang quan sát ông lão ngoài cửa, tìm kiếm quy luật giết người của nó. Chỉ có tìm ra quy luật, ông mới có cơ hội thắng.
+
+"Mau động não, mau suy nghĩ đi Dương Gian! Rốt cuộc ông già này có quy luật gì?"
+
+Não bộ hắn hoạt động hết công suất. Hắn nhớ lại những ghi chép trên diễn đàn hôm nọ, rồi liên kết với tình huống hiện tại.
+
+Nhất định phải có điểm chung.
+
+Vị bác sĩ tên Lôi Điện Pháp Vương kia đang ở nhà, cửa đóng. Ông lão này đứng ngoài gõ cửa... sau đó đi vào. Tiếp đến lại đến trước cửa phòng, lại gõ cửa, rồi lại tiến vào.
+
+Ở trường học, con quỷ xuất hiện ngoài hành lang, cũng gõ cửa như vậy... nhưng nó không tiến vào ngay.
+
+Tại sao ông lão đi vào nhà vị bác sĩ nhưng lại chần chừ ở đây?
+
+Tình huống giống nhau, nhưng kết quả khác nhau. Điều gì dẫn tới sự khác biệt này?
+
+Là thời gian không đủ sao?
+
+Lẽ nào là... thời gian gõ cửa chưa đủ?
+
+Có lẽ đây chính là mấu chốt!
+
+Liều một phen!
+
+Dương Gian lấy hết can đảm hét lên:
+
+"Chu Chính, là tiếng gõ cửa!"
+
+Chu Chính ngẩn người, ánh mắt sáng quắc nhìn chăm chăm vào cậu học sinh vừa lên tiếng:
+
+"Trò nói cái gì?"
+
+Dương Gian ghìm nén nỗi sợ hãi, nói nhanh:
+
+"Mặc dù chỉ là suy đoán nhưng em cảm thấy nó dựa vào tiếng gõ cửa để giết người. Có lẽ ông lão kia đang đếm, hoặc là một điều kiện gì đó, nhưng chắc chắn có liên quan đến việc gõ cửa. Nếu ngăn được thứ kia gõ cửa, có lẽ sẽ có tác dụng..."
+
+Gõ cửa để giết người?
+
+Nếu đúng là như vậy, con quỷ này quả thực quá mức đáng sợ.
+
+Phương Kính nhìn Dương Gian với ánh mắt nghi ngờ pha lẫn ghen tị, tay nắm chặt thành nắm đấm:
+
+"Tiềm lực của thằng nhóc này mới vậy đã bộc lộ ra rồi... Nhất định không thể để nó sống sót rời khỏi ngôi trường này."
+
+Chu Chính thu lại ánh nhìn, ông đâu còn lựa chọn nào khác:
+
+"Tin em một lần."
+
+Nếu tiếp tục chần chừ, tất cả sẽ chết.
+
+Lập tức, Chu Chính hành động. Ông lao ra ngoài như một con dã thú điên cuồng. Tấm thân quái dị trên gầy dưới béo của ông bùng phát sức công phá mà người thường không thể tưởng tượng nổi.
+
+"Rầm!"
+
+Một âm thanh cực lớn vang lên. Cửa phòng học bị ông tông nát, đồng thời cú va chạm cũng hất văng ông lão mặc áo dài đen, mặt xám ngoét, toàn thân lốm đốm tử thi đang đứng ngoài cửa.
+
+Ông lão ngã nhào, nằm sóng soài trên đất.
+
+Thân thể lão vặn vẹo trong một tư thế quái dị, cứng đờ như xác chết lâu ngày, hoàn toàn không có sự mềm mại của người sống.
+
+"Quỷ giết cũng không chết."
+
+Câu này do chính tay Chu Chính viết, đương nhiên ông không thể quên. Dù ông lão này có bị nghiền nát xương tan, đốt thành tro thì vẫn không thể chết, nó sẽ lại xuất hiện dưới một hình dạng khác khủng khiếp hơn.
+
+"Đối phó với quỷ, chỉ có thể là quỷ."
+
+Chu Chính cắn răng, quay đầu hét lớn:
+
+"Các cậu chờ thời cơ, có cơ hội thì hãy chạy đi! Tôi sẽ chặn nó lại."
+
+Ông nới rộng áo khoác, cái bụng phồng lên động đậy mấy cái đầy quỷ dị.
+
+Một bàn tay... chính xác là vết lằn của một bàn tay nhô ra khỏi lớp da bụng. Cánh tay lộ ra màu xám xanh, móng tay nhọn hoắt, như thể muốn xé toạc lớp da kia để chui ra ngoài.`
+    };
+
+    titleEl.textContent = `Chương ${chapNum}`;
+    contentEl.textContent = chapters[chapNum] || `Chương ${chapNum}: Nội dung chương ${chapNum} (Demo - hỗ trợ đến chương 1000).`;
+
+    // Add navigation buttons
+    const navEl = document.getElementById('chapter-nav');
+    const currentChap = parseInt(chapNum) || 1;
+    const prevChap = currentChap - 1;
+    const nextChap = currentChap + 1;
+    let prevBtn = '';
+    if (prevChap >= 1) {
+      prevBtn = `<button class="nav-btn" onclick="window.location.href='read 2.html?chap=${prevChap}'">Chương trước</button>`;
+    } else {
+      prevBtn = `<button class="nav-btn" disabled>Chương trước</button>`;
+    }
+    navEl.innerHTML = prevBtn + `<button class="nav-btn" onclick="window.location.href='read 2.html?chap=${nextChap}'">Chương tiếp theo</button>`;
+  </script>
+</body>
+</html>

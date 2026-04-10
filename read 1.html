@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc truyện - 𝔰𝔥𝔬𝔯𝔢♡𝔨𝔢𝔢𝔭𝔢𝔯</title>
+  <link rel="stylesheet" href="style_dark.css">
+  <style>
+    .main { flex-direction: column; padding: 40px 60px; }
+    .content { flex: 1; max-width: 100%; }
+    .reading-container { background: linear-gradient(145deg, #1e1e1e, #1a1a1a); border-radius: 20px; padding: 40px; margin-top: 30px; box-shadow: 0 10px 40px rgba(26,26,26,0.2); }
+    .chapter-title { font-size: 32px; text-align: center; margin-bottom: 30px; color: #dc2626; border-bottom: 3px solid #b91c1c; padding-bottom: 15px; }
+    .reading-frame { font-size: 18px;white-space: pre-line; line-height: 1.8; color: #e5e5e5; max-height: 70vh; overflow-y: auto; background: rgba(0,0,0,0.3); padding: 30px; border-radius: 15px; border-left: 5px solid #dc2626; }
+    .chapter-nav { text-align: center; margin: 20px 0; }
+    .nav-btn { background: #dc2626; color: white; border: none; padding: 12px 24px; margin: 0 10px; border-radius: 8px; cursor: pointer; font-size: 16px; transition: background 0.3s; }
+    .nav-btn:hover:not(:disabled) { background: #b91c1c; }
+    .nav-btn:disabled { background: #666; cursor: not-allowed; opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">𝔰𝔥𝔬𝔯𝔢♡𝔨𝔢𝔢𝔭𝔢𝔯</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search novels...">
+      <button>Search</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="c.html">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="content">
+      <a href="detail1.html" class="back-link">&larr; Back to Đạo quỷ dị tiên</a>
+      
+      <div id="chapter-info" class="reading-container">
+        <h1 id="chapter-title" class="chapter-title">Chương 1</h1>
+        <div id="chapter-content" class="reading-frame">
+          Nội dung chương sẽ hiển thị ở đây...
+        </div>
+        <div id="chapter-nav" class="chapter-nav"></div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://www.messenger.com/e2ee/t/8092721154146692" target="_blank" rel="noopener noreferrer" class="messenger-icon" title="Chat với tôi trên Messenger">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2C6.48 2 2 6.29 2 11.8c0 2.91 1.63 5.5 4.18 7.06v3.59l4.03-2.23c.89.24 1.84.37 2.79.37 5.52 0 10-4.29 10-9.8S17.52 2 12 2zm1.69 12.97l-2.31-2.49-4.05 2.49 4.38-5.53 2.33 2.48 4.07-2.48-4.42 5.53z"/>
+    </svg>
+  </a>
+
+  <footer class="footer-table">
+    <div class="footer-content">
+      <div class="footer-item">Chính sách</div>
+      <div class="footer-item">Điều khoản dịch vụ</div>
+      <div class="footer-item">Trang Facebook</div>
+      <div class="footer-item">Thông báo</div>
+    </div>
+    <div class="footer-bottom">
+      <p>Thời gian làm việc từ 8h sáng - 23h đêm tất cả các ngày trong tuần</p>
+      <p>© Copyright DUCKCOOP.VNS. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const chapNum = urlParams.get('chap') || '1';
+    const titleEl = document.getElementById('chapter-title');
+    const contentEl = document.getElementById('chapter-content');
+    titleEl.textContent = `Chương ${chapNum}`;
+    contentEl.textContent = `Chương ${chapNum}: Nội dung chương ${chapNum} (Demo - hỗ trợ đến chương 1432).`;
+
+    // Add navigation buttons
+    const navEl = document.getElementById('chapter-nav');
+    const currentChap = parseInt(chapNum) || 1;
+    const prevChap = currentChap - 1;
+    const nextChap = currentChap + 1;
+    let prevBtn = '';
+    if (prevChap >= 1) {
+      prevBtn = `<button class="nav-btn" onclick="window.location.href='read 1.html?chap=${prevChap}'">Chương trước</button>`;
+    } else {
+      prevBtn = `<button class="nav-btn" disabled>Chương trước</button>`;
+    }
+    navEl.innerHTML = prevBtn + `<button class="nav-btn" onclick="window.location.href='read 1.html?chap=${nextChap}'">Chương tiếp theo</button>`;
+  </script>
+</body>
+</html>
